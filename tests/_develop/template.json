@@ -1,0 +1,5 @@
+{
+  "id": "${uuid}",
+  "name": "${name}",
+  "email": "${email}"
+}

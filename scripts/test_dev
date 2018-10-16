@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -e
+
+### globals ####################################################################
+
+this_path="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+repo_path="$this_path/.."
+
+### main #######################################################################
+
+pybot --pythonpath="$repo_path/src" ${@:-"$repo_path/tests/_develop"}
